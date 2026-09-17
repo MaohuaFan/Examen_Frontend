@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,25 +21,29 @@
     </header>
 
     <main>
-
         <section>
-            <h1>Mijn portfolio</h1>
+            <h1>Contact</h1>
             <article>
-                <p>
-                    Hallo, mijn naam is Maohua Fan. Ik ben student Software Development en in dit portfolio laat ik zien wie ik ben, wat ik kan en aan welke projecten ik heb gewerkt.
-                </p>
+                <p>E-mail: <a href="https://outlook.office.com/">jouw@email.nl</a></p>
+                <p>Telefoon: 06-XXXXXXXX</p>
             </article>
-        </section>
-
-        <section>
-            <h2>Welkom</h2>
+            
             <article>
-                <p>
-                    Op deze website vind je informatie over mijn vaardigheden, opleiding, werkervaring en projecten.
-                </p>
-            </article>
-        </section>
+                <form>
+                    <label for="naam">Naam</label>
+                    <input type="text" id="naam">
 
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email">
+
+                    <label for="bericht">Bericht</label>
+                    <textarea id="bericht"></textarea>
+
+                    <button type="submit">Versturen</button>
+                </form>
+            </article>
+            
+        </section>
     </main>
 
     <footer>
