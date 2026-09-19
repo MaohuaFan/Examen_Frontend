@@ -11,6 +11,10 @@ body {
     line-height: 1.6;
     color: #222;
     background-color: #f5f5f5;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -19,11 +23,10 @@ body {
 header {
     background-color: #000;
     color: #fff;
-    padding: 20px;
+    padding: 2vh 2vw;
 
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
     z-index: 1000;
 }
@@ -31,7 +34,8 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 2vw;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -47,25 +51,27 @@ nav a:hover {
 /* Main - Main - Main */
 
 main {
-    max-width: 1000px;
+    width: 100%;
+    max-width: 100vw;
     margin: 0 auto;
-    padding-top: 90px;
-    padding-bottom: 80px;
+    padding: 5vh 5vw;
+    flex: 1;
 }
 
 section {
-    padding: 60px 20px;
+    width: 100%;
+    padding: 6vh 3vw;
     background-color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
 }
 
 h1,
 h2 {
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
 }
 
 p {
-    margin-bottom: 15px;
+    margin-bottom: 2vh;
 }
 
 
@@ -74,22 +80,22 @@ p {
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    max-width: 500px;
+    gap: 1vh;
+    max-width: 50vw;
 }
 
 input,
 textarea {
-    padding: 10px;
+    padding: 1vh 1vw;
     border: 1px solid #ccc;
 }
 
 textarea {
-    min-height: 150px;
+    min-height: 15vh;
 }
 
 button {
-    padding: 10px;
+    padding: 1vh 1vw;
     background-color: #000;
     color: #fff;
     border: none;
@@ -106,13 +112,7 @@ footer {
     background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 20px;
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+    padding: 2vh 2vw;
 }
 
 
@@ -121,22 +121,27 @@ footer {
 @media (max-width: 768px) {
 
     nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        gap: 1vh 3vw;
     }
 
     main {
-        padding-top: 180px;
-        padding-bottom: 80px;
+        width: 100%;
+        max-width: 100vw;
+        padding: 4vh 4vw;
     }
 
     section {
-        padding: 40px 15px;
+        width: 100%;
+        padding: 4vh 4vw;
     }
 
     .vaardigheden-section {
         grid-template-columns: 1fr;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 
 }
@@ -147,7 +152,7 @@ footer {
 .vaardigheden-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    gap: 2vh 2vw;
 }
 
 .vaardigheden-section h1 {
@@ -160,4 +165,13 @@ footer {
 
 .vaardigheden-section ul {
     list-style-position: inside;
+}
+
+/* Afbeeldingen - Afbeeldingen - Afbeeldingen */
+
+img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-bottom: 2vh;
 }
